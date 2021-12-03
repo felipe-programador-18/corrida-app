@@ -19,17 +19,24 @@ function App() {
 
  // work local storage!!////////////////
  const [valor, setValor] = useState('')
+ const [mostrar, setMostrar] = useState('')
+
 const Addinging = (chave, valor) =>{
   localStorage.setItem(chave,valor)
 }
 
 const Busca = (chave) =>{
   localStorage.getItem( chave)
-  alert('Guardei name' + valor)
+  alert('Name search is: ' + valor)
 }
 
 const Apaga = (chave) =>{
   localStorage.removeItem(chave)
+}
+
+
+const Seeing = () => {
+  setMostrar(mostrar+1)
 }
 //////////////////////////////////////
 
@@ -95,8 +102,10 @@ const Pegaopt = (props) =>{
     <Button text='armazena' onClick={() => Addinging('ls_name', valor)}       />
     <Button text ='busca' onClick={() => Busca('ls_name')} />
     <Button text ='Deleta' onClick={() => Apaga('ls_name')} />
+      <br/> {valor}
    
-   
+
+      <p text={valor} onChange= {(e) => Seeing(e.target.valor)}     />
     </div>
   );
 }
