@@ -26,7 +26,7 @@ const Addinging = (chave, valor) =>{
 }
 
 const Busca = (chave) =>{
-  localStorage.getItem( chave)
+  localStorage.getItem( chave.id)
   alert('Name search is: ' + valor)
 }
 
@@ -98,8 +98,8 @@ const Pegaopt = (props) =>{
 
 
     <label> Escreva um nome :</label>
-    <input type='text'   value ={valor}      onChange={(e) => setValor(e.target.value)}  />
-    <Button text='armazena' onClick={() => Addinging('ls_name', valor)}       />
+    <input type='text'   value ={valor.id}      onChange={(e) => setValor(e.target.value)}  />
+    <Button text='armazena' onClick={() => Addinging('ls_name', valor.id)}       />
     <Button text ='busca' onClick={() => Busca('ls_name')} />
     <Button text ='Deleta' onClick={() => Apaga('ls_name')} />
       <br/> {valor}
