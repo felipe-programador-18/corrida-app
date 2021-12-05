@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import Button from './button';
 import './App.css';
+import Paragrafo from './paragr';
+
 
 function App() {
 
@@ -55,14 +57,7 @@ const Aumenta = (props) =>{
    )
   }
 
- const Paragrafo = (props) =>{
-   return(
-     <p>
-     {props.text}
-     </p>
-   )
- }
-
+ 
  //here i get value of option!!
 const Pegaopt = (props) =>{
   return(
