@@ -16,7 +16,7 @@ function App() {
    setAumenta(Maisone-1)
  }
 
- //here is tagget element of set in the choise!!
+ //here is tagget element of set in the choise!!!
  const [brand, setBrand] = useState('')
 
  // work local storage!!////////////////
