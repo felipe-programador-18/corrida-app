@@ -3,6 +3,8 @@ import Button from './button';
 import './App.css';
 import Paragrafo from './paragr';
 import Remember from './remmeber';
+import Create from './create';
+
 
 function App() {
 
@@ -107,7 +109,8 @@ const Pegaopt = (props) =>{
       <p text={valor} onChange= {(e) => Seeing(e.target.valor)}     />
 
       <Remember kimore = 'hi there i a again to practice more about react let jump right now' />
-
+      
+      <Create missed= '+'/>
 
     </div>
   );
