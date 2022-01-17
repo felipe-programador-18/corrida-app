@@ -6,16 +6,22 @@ import Remember from './remmeber';
 import Create from './create';
 
 
-function App() {
+function App(){
+// setflag another code to remember
+const [one, setone] = useState(0) 
 
 //practice about useState
   const [Maisone, setAumenta] = useState(0)
   const Increased = () => {
      setAumenta(Maisone+1)
      console.log('test here')
+
+     setone(one+1)
+     console.log('test click here', + one)
   }
  const Decrement = () => {
    setAumenta(Maisone-1)
+   
  }
 
  //here is tagget element of set in the choise!!!
@@ -110,7 +116,9 @@ const Pegaopt = (props) =>{
 
       <Remember kimore = 'hi there i a again to practice more about react let jump right now' />
       
-      <Create missed= '+'/>
+
+      <Aumenta more={one} />
+      <Create missed= '+' onClick={Increased} />
 
     </div>
   );
