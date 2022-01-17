@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import Button from './button';
 import './App.css';
 import Paragrafo from './paragr';
-
+import Remember from './remmeber';
 
 function App() {
 
@@ -68,6 +68,10 @@ const Pegaopt = (props) =>{
 
 
 
+
+
+
+
   return (
     <div className="App">
     
@@ -101,6 +105,10 @@ const Pegaopt = (props) =>{
    
 
       <p text={valor} onChange= {(e) => Seeing(e.target.valor)}     />
+
+      <Remember kimore = 'hi there i a again to practice more about react let jump right now' />
+
+
     </div>
   );
 }
